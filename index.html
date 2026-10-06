@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="meta.title">Алексей Мерзляков — Game Producer. Скажу, где игрок споткнётся</title>
+<meta name="description" data-i18n-content="meta.desc" content="Senior Game Producer, 14+ лет в mobile F2P. За час консультации ($60) скажу, где ваша игра теряет игроков и деньги — и что чинить первым.">
+<meta name="theme-color" content="#0a0c10">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aleksei Merzliakov — Game Producer">
+<meta property="og:title" data-i18n-content="meta.ogTitle" content="Ваша воронка течёт. За час покажу, где именно.">
+<meta property="og:description" data-i18n-content="meta.ogDesc" content="Алексей Мерзляков, Senior Game Producer. 14+ лет в mobile F2P, Dead Impact — D1 с 20%+ до 40%+. Час разбора вашей игры — $60.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.classList.remove('no-js');</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23f5d547'/%3E%3Ctext x='32' y='41' font-family='Arial Black,Arial' font-weight='900' font-size='26' text-anchor='middle' fill='%2315130a'%3EAM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Unbounded:wght@700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/skeptic-800.jpg" imagesrcset="img/skeptic-800.jpg 800w, img/skeptic-1600.jpg 1600w" imagesizes="(max-width: 900px) 90vw, 40vw">
+<link rel="stylesheet" href="style.css">
+<noscript><style>.rv{opacity:1!important;transform:none!important}.sim,.loot,.quiz-body{display:block!important}</style></noscript>
+</head>
+<body>
+
+<!-- ===== HUD ===== -->
+<header class="hud" id="hud">
+  <div class="wrap">
+    <a class="logo" href="#top">
+      <span class="mono" aria-hidden="true">AM</span>
+      <span class="name"><span data-i18n="hud.name">Алексей Мерзляков</span><small data-i18n="hud.role">Senior Game Producer</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Sections">
+      <a href="#funnel" data-i18n="nav.funnel">Воронка</a>
+      <a href="#method" data-i18n="nav.method">Метод</a>
+      <a href="#cases" data-i18n="nav.cases">Кейсы</a>
+      <a href="#offer" data-i18n="nav.offer">Цена</a>
+      <a href="#skills" data-i18n="nav.skills">Навыки</a>
+      <a href="#projects" data-i18n="nav.projects">Проекты</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#cv" data-i18n="nav.cv">Резюме</a>
+    </nav>
+    <div class="hud-right">
+      <span class="lvl" id="hudLvl" title="XP = scroll"><span data-i18n="hud.lvl">LVL</span> <b id="lvlNum">1</b></span>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="ru" lang="ru" class="on" aria-pressed="true">RU</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn-gold" href="https://t.me/AlekseiMerzliakov" target="_blank" rel="noopener" data-cta="hud" data-tg><span class="price-lbl" data-i18n="hud.cta">Час</span> <span class="price">$60</span></a>
+      <button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+  <div class="xp" aria-hidden="true"><i id="xpBar"></i></div>
+</header>
+
+<main id="top">
+
+<noscript><div class="wrap" style="padding:90px 0 20px;color:#9aa3b5">Алексей Мерзляков — Senior Game Producer, 14+ лет в mobile F2P. Час консультации по вашей игре — $60. Telegram: <a href="https://t.me/AlekseiMerzliakov">@AlekseiMerzliakov</a> · <a href="mailto:kurusayd@gmail.com">kurusayd@gmail.com</a> · <a href="tel:+79673215453">+7 967 321-54-53</a>. Для интерактивной версии включите JavaScript.</div></noscript>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="hero" data-lvl="hero">
+  <aside class="xray-note" data-xray="hero"></aside>
+  <div class="wrap">
+    <div class="rv in">
+      <div class="eyebrow"><span data-i18n="hero.eyebrow">Для мобильных F2P-игр на софт-лонче и в раннем лайве · Senior Game Producer, 14+ лет</span></div>
+      <h1 class="h1" data-i18n-html="hero.h1">Я скажу, где игрок споткнётся — <span class="hl">до того, как это покажут метрики</span></h1>
+      <p class="lead" data-i18n-html="hero.lead">Аналитика показывает, где ушёл игрок. Я говорю, почему — и что менять первым. Прохожу вашу игру глазами нового игрока ещё до созвона; за 60 минут вы получаете 5–10 конкретных правок с приоритетами. Час — $60, список правок — в течение суток у вас в чате.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold btn-lg" href="https://t.me/AlekseiMerzliakov" target="_blank" rel="noopener" data-cta="hero" data-tg><span data-i18n="cta.book">Забронировать час</span> <span class="price">$60</span></a>
+        <a class="btn btn-ghost btn-lg" href="#funnel" data-i18n="hero.cta2">Как это работает ↓</a>
+      </div>
+      <p class="micro" data-i18n="hero.micro">Кнопка откроет Telegram с готовым сообщением — допишите ссылку на стор, билд или прототип. Нет Telegram — напишите на почту.</p>
+      <ul class="strip" id="strip" aria-label="Key numbers"></ul>
+      <p class="worked" data-i18n-html="hero.worked"><span>Работал в:</span> Playrix · Reaction Games · Digital Pill · Social Quantum · ArtWorkout</p>
+    </div>
+    <div class="card-wrap rv in">
+      <div class="glow"></div>
+      <div class="char" id="charCard">
+        <div class="photo">
+          <img src="img/skeptic-1600.jpg" srcset="img/skeptic-800.jpg 800w, img/skeptic-1600.jpg 1600w" sizes="(max-width: 900px) 90vw, 40vw" alt="Алексей Мерзляков, игровой продюсер — студийный портрет" data-i18n-alt="hero.alt" width="1067" height="1600" fetchpriority="high" id="heroPhoto">
+          <span class="tag"><i aria-hidden="true"></i><span data-i18n="char.tag">Открыт к консультациям</span></span>
+          <span class="lvlbadge" id="charLvl" aria-hidden="true"><small>LVL</small>14</span>
+        </div>
+        <div class="plate">
+          <p class="name" data-i18n="char.name">Алексей Мерзляков</p>
+          <div class="cls" data-i18n="char.cls">Класс: Game Producer / Product Manager · Специализация: полишинг и воронки</div>
+          <div class="stats" id="stats" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Symptoms ===== -->
+<section class="section pain" id="pain" data-lvl="pain">
+  <aside class="xray-note" data-xray="pain"></aside>
+  <div class="wrap">
+    <div class="pain-grid">
+      <div class="rv">
+        <div class="eyebrow"><span class="q"></span><span data-i18n="pain.eyebrow">Симптомы</span></div>
+        <h2 class="h2" data-i18n="pain.h2">Узнаёте свою игру?</h2>
+        <ul class="pain-list" id="painList"></ul>
+        <p class="takeaway" id="painTake" data-i18n-html="pain.take"></p>
+        <p class="note" data-i18n="pain.note">Цифры в списке условные — для узнавания, не из конкретного проекта.</p>
+      </div>
+      <div class="photo-tile pain-photo rv rv-d1">
+        <img src="img/shock-1600.jpg" srcset="img/shock-800.jpg 800w, img/shock-1600.jpg 1600w" sizes="(max-width: 900px) 90vw, 36vw" alt="" width="1600" height="1067" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Funnel ===== -->
+<section class="section" id="funnel" data-lvl="funnel">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow"><span class="q"></span><span data-i18n="funnel.eyebrow">Воронка</span></div>
+      <h2 class="h2" data-i18n="funnel.h2">Где течёт воронка?</h2>
+      <p class="lead" data-i18n="funnel.lead">Семь шагов типичной мобильной F2P-игры — от установки до второй покупки. На каждом игра теряет игроков. Вопрос — где она теряет больше, чем должна. Сначала угадайте. Потом подставьте свои цифры.</p>
+    </div>
+    <div class="funnel-grid">
+      <div class="panel rv" id="funnelPanel">
+        <div class="funnel-top">
+          <div class="counter"><span data-i18n="funnel.players">Из 1000 установок осталось:</span> <b id="funnelCount">?</b></div>
+          <span class="badge-ill" data-i18n="funnel.badge">Типовая воронка · условные цифры</span>
+        </div>
+        <p class="guess-hint" id="guessHint" data-i18n="funnel.guess">Где типичная игра теряет самую большую долю дошедших до шага игроков? Шаг оплаты не считаем. Нажмите на шаг.</p>
+        <ol class="steps" id="steps"></ol>
+        <div class="funnel-foot">
+          <p class="note" data-i18n="funnel.note">Проценты условные — типичные для мобильного F2P по открытым отчётам. Это не цифры из моих проектов: реальные показатели Dead Impact — в блоке «Кейсы».</p>
+          <button type="button" class="btn" id="simToggle" aria-expanded="false" aria-controls="sim" data-i18n="funnel.simBtn">Подставить свои цифры →</button>
+        </div>
+      </div>
+      <aside class="funnel-side rv rv-d1">
+        <div class="react" id="react">
+          <div class="photo-tile react-photo">
+            <img id="reactImg" src="img/calm-800.jpg" alt="" width="533" height="800" loading="lazy" decoding="async">
+          </div>
+          <div class="react-txt" id="reactTxt" aria-live="polite" data-i18n-html="funnel.reactIdle"><b>Ваш ход.</b> Выберите шаг — я скажу, попали ли вы в главную течь.</div>
+        </div>
+        <h3 class="side-h" data-i18n="funnel.sideTitle">На что я смотрю в первую очередь</h3>
+        <ul class="checks" id="checks"></ul>
+      </aside>
+    </div>
+
+    <div class="sim rv" id="sim" hidden>
+      <div class="sim-head">
+        <h3 data-i18n="sim.h3">Подставьте свои цифры</h3>
+        <p data-i18n="sim.lead">Сдвиньте ползунки под свою игру. Счётчик покажет, сколько платящих остаётся из 1000 установок — и какой шаг забирает больше всего.</p>
+      </div>
+      <div class="sim-grid">
+        <div class="sliders" id="sliders"></div>
+        <div class="sim-out">
+          <div class="sim-res" id="simRes" aria-live="polite"></div>
+          <p class="note" data-i18n="sim.micro">Нет метрик? Оставьте типовые значения. Половина проблем видна без аналитики — достаточно пройти первые десять минут глазами нового игрока.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mini-offer rv" id="miniOffer">
+      <div class="mo-txt">
+        <b data-i18n="mini.t1">Час — $60</b>
+        <span data-i18n="mini.t2">Прохожу игру заранее · 60 минут созвона · 5–10 правок с приоритетами в течение суток</span>
+      </div>
+      <a class="btn btn-gold" href="https://t.me/AlekseiMerzliakov" target="_blank" rel="noopener" data-cta="funnel" data-tg><span data-i18n="funnel.cta">Узнать, почему течёт у меня</span> <span class="price">$60</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Mini game ===== -->
+<section class="section" id="game" data-lvl="game">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow"><span class="q"></span><span data-i18n="game.eyebrow">Мини-игра</span></div>
+      <h2 class="h2" data-i18n="game.h2">Найдите, где споткнётся игрок</h2>
+      <p class="lead" data-i18n="game.lead">Пять экранов типичной мобильной игры. На каждом есть одно место, где новый игрок с большой вероятностью закроет приложение. Нажмите на него — подсвеченные зоны кликабельны.</p>
+    </div>
+    <div class="game-grid">
+      <div class="game-head rv">
+        <div class="round" id="roundLbl"></div>
+        <h3 id="roundTitle"></h3>
+        <p class="task" id="roundTask"></p>
+        <div class="score" id="score" role="img" aria-label=""></div>
+      </div>
+      <div class="rv">
+        <div class="phone" id="phone">
+          <div class="notch" aria-hidden="true"></div>
+          <div class="screen"><div class="inner" id="screen"></div></div>
+        </div>
+      </div>
+      <div class="game-side rv rv-d1">
+        <div class="feedback" id="feedback" aria-live="polite">
+          <div class="ttl" id="fbTitle"></div>
+          <p id="fbText"></p>
+          <button class="btn" id="nextRound" type="button" data-i18n="game.next">Следующий экран →</button>
+        </div>
+        <div class="game-end" id="gameEnd">
+          <h4 id="endTitle"></h4>
+          <p id="endText"></p>
+          <div class="cta-row">
+            <a class="btn btn-gold" href="https://t.me/AlekseiMerzliakov" target="_blank" rel="noopener" data-cta="game" data-tg><span data-i18n="game.cta">Такой же разбор по вашей игре</span> <span class="price">$60</span></a>
+            <button class="btn btn-ghost" id="replay" type="button" data-i18n="game.replay">Сыграть ещё раз</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Method ===== -->
+<section class="section" id="method" data-lvl="method">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow"><span class="q"></span><span data-i18n="method.eyebrow">Метод</span></div>
+      <h2 class="h2" data-i18n="method.h2">Как я нахожу, где игрок споткнётся</h2>
+      <p class="lead" data-i18n="method.lead">Между «на четвёртом шаге туториала теряем 18%» и «игрок не понял, что награда — это валюта» — вся разница между дашбордом и починенной игрой. Вот как я прохожу эту дистанцию. Шаги 1–2 делаю до созвона, шаги 3–6 — вместе с вами за 60 минут.</p>
+    </div>
+    <div class="method-grid">
+      <div class="photo-tile method-photo rv">
+        <img src="img/hero-1600.jpg" srcset="img/hero-800.jpg 800w, img/hero-1600.jpg 1600w" sizes="(max-width: 900px) 90vw, 30vw" alt="" width="1067" height="1600" loading="lazy" decoding="async">
+      </div>
+      <div class="rv rv-d1">
+        <ol class="method-steps" id="methodSteps"></ol>
+        <div class="result-box">
+          <h3 data-i18n="method.outTitle">Что вы получите</h3>
+          <p data-i18n="method.out">Список из 5–10 правок с приоритетами: что сделать до следующего билда, что — в следующем спринте, что не трогать вообще. Не «подумайте над онбордингом», а «на третьем экране туториала игрок не понимает, что нажимать — уберите текст, подсветите кнопку, дайте выстрелить на второй секунде».</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="chest-wrap rv" id="chestWrap">
+      <button type="button" class="chest" id="chest" aria-expanded="false" aria-controls="loot">
+        <span class="chest-ic" aria-hidden="true">🎁</span>
+        <span class="chest-txt">
+          <b data-i18n="loot.h3">Лут: 12 мест, где сужается воронка</b>
+          <span data-i18n="loot.closed">Нажмите — внутри чек-лист, который можно унести команде. Жанры разные — места одни и те же.</span>
+        </span>
+        <span class="chest-arrow" aria-hidden="true">▾</span>
+      </button>
+      <div class="loot" id="loot" hidden>
+        <ol class="loot-list" id="lootList"></ol>
+        <div class="loot-foot">
+          <button type="button" class="btn" id="copyLoot" data-i18n="loot.copy">Скопировать чек-лист</button>
+          <span class="note" data-i18n="loot.note">Список — бесплатно, забирайте команде. Какие из двенадцати у вас, насколько глубоко и что чинить первым — это и есть час за $60.</span>
+        </div>
+        <a class="cta-line" href="https://t.me/AlekseiMerzliakov" target="_blank" rel="noopener" data-cta="loot" data-tg data-i18n="loot.cta">Проверить мою игру по этому списку — $60 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Cases / bosses ===== -->
+<section class="section" id="cases" data-lvl="cases">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow"><span class="q"></span><span data-i18n="cases.eyebrow">Кейсы · босс-файт</span></div>
+      <h2 class="h2" data-i18n="cases.h2">D1 ×2, D7 ×3, D30 ×4</h2>
+      <p class="lead" data-i18n="cases.lead">Не удача — три с лишним года работы над одной игрой. Ретеншен — это три разных противника, и у каждого своя тактика. В Dead Impact я бился со всеми тремя: от прототипа до глобального запуска и самоокупаемости. Чинить — годы. Увидеть, где течёт, — час: с этого начинался каждый из трёх боёв. Прокрутите — полосы покажут, с чего начали и к чему пришли.</p>
+      <p class="ctx" data-i18n="cases.ctx">Dead Impact — мобильный зомби-шутер, Reaction Games, 2022–2025. Команда 45 человек, 10 прямых подчинённых. Продуктовое видение, направление геймплея и роадмап — мои. Производственные процессы — вместе с CEO и HR-директором.</p>
+    </div>
+    <div class="boss-grid" id="bosses"></div>
+    <div class="boss-bottom">
+      <div>
+        <p class="boss-cap" data-i18n="cases.cap">Босс не повержен — в F2P он не бывает повержен. Но ретеншен удвоен, а на D30 — учетверён. Цифры реальные; «чем бьют» — общий подход, конкретные правки Dead Impact не раскрываю.</p>
+        <div class="cta-row">
+          <a class="btn btn-gold" href="https://t.me/AlekseiMerzliakov" target="_blank" rel="noopener" data-cta="cases" data-tg><span data-i18n="cases.cta">Разобрать мою игру</span> <span class="price">$60</span></a>
+          <a class="btn btn-ghost" href="#projects" data-i18n="cases.more">Ещё проекты ↓</a>
+        </div>
+      </div>
+      <div class="photo-tile boss-photo rv">
+        <img src="img/fists-1600.jpg" srcset="img/fists-800.jpg 800w, img/fists-1600.jpg 1600w" sizes="(max-width: 900px) 90vw, 50vw" alt="" width="1600" height="1067" loading="lazy" decoding="async">
+        <div class="cap" data-i18n-html="cases.photoCap"><b>Ретеншен не чинится пушами.</b> Он чинится в первой сессии — там, где игрок решает, вернётся ли завтра.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Offer ===== -->
+<section class="section offer" id="offer" data-lvl="offer">
+  <aside class="xray-note" data-xray="offer"></aside>
+  <div class="wrap">
+    <div class="offer-grid">
+      <div>
+        <div class="sec-head rv" style="margin-bottom:0">
+          <div class="eyebrow"><span class="q"></span><span data-i18n="offer.eyebrow">Цена</span></div>
+          <h2 class="h2" data-i18n="offer.h2">Час консультации — $60</h2>
+          <p class="lead" data-i18n="offer.lead">Один формат. Одна цена. На созвоне ничего не продаю: если захотите продолжить — скажете сами.</p>
+        </div>
+        <h3 class="sub-h rv" data-i18n="offer.inTitle">Что входит</h3>
+        <ul class="inside rv" id="inside"></ul>
+        <div class="two rv">
+          <div class="box"><h3 class="sub-h" data-i18n="offer.forTitle">Кому подойдёт</h3><p id="offerFor" data-i18n="offer.for"></p></div>
+          <div class="box"><h3 class="sub-h" data-i18n="offer.notTitle">Кому не подойдёт</h3><p id="offerNot" data-i18n="offer.not"></p></div>
+        </div>
+        <div class="why rv">
+          <h3 class="sub-h" data-i18n="offer.whyTitle">Почему $60, а не $600</h3>
+          <p data-i18n="offer.why"></p>
+        </div>
+        <h3 class="sub-h rv" data-i18n="offer.sendTitle">Что прислать перед созвоном</h3>
+        <ul class="send rv" id="sendList"></ul>
+        <h3 class="sub-h rv" data-i18n="offer.sampleTitle">Пример списка правок</h3>
+        <p class="note rv" style="margin-top:-6px;margin-bottom:12px" data-i18n="offer.sampleNote">Условный пример формата, не реальный проект.</p>
+        <ul class="sample rv" id="sampleList"></ul>
+        <h3 class="sub-h rv" data-i18n="offer.howTitle">Три шага до списка правок</h3>
+        <ol class="howto rv" id="howto"></ol>
+      </div>
+      <aside class="price-card rv rv-d1">
+        <div class="ph"><img src="img/consult-laugh-1600.jpg" srcset="img/consult-laugh-800.jpg 800w, img/consult-laugh-1600.jpg 1600w" sizes="(max-width: 900px) 90vw, 420px" alt="" width="1067" height="1600" loading="lazy" decoding="async"></div>
+        <div class="body">
+          <div class="pr"><b>$60</b><span data-i18n="offer.per">/ 60 минут</span></div>
+          <p class="pl" data-i18n="offer.priceNote">Стартовая цена первого часа. Моя задача — чтобы после него вы захотели второй или позвали меня на проект.</p>
+          <div class="cta-row">
+            <a class="btn btn-gold btn-lg" href="https://t.me/AlekseiMerzliakov" target="_blank" rel="noopener" data-cta="price" data-tg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M9.04 15.47 8.66 20.8c.54 0 .78-.23 1.06-.51l2.55-2.44 5.28 3.87c.97.53 1.65.25 1.91-.9L22.9 3.97c.3-1.43-.52-1.99-1.46-1.64L2.2 9.72c-1.4.55-1.38 1.33-.24 1.68l4.92 1.54L18.3 5.76c.54-.33 1.03-.15.63.18"/></svg>
+              <span data-i18n="cta.book">Забронировать час</span> <span class="price">$60</span>
+            </a>
+            <div class="row2">
+              <a class="btn" href="mailto:kurusayd@gmail.com" data-cta="mail" data-mail data-i18n="offer.mail">Написать письмо</a>
+              <button class="btn" type="button" id="copyTg" data-i18n="offer.copy">Скопировать @</button>
+            </div>
+          </div>
+          <p class="micro" data-i18n="offer.micro">Откроется Telegram с готовым сообщением. Отвечаю сам, обычно в течение дня. Нет Telegram — kurusayd@gmail.com.</p>
+          <ul class="meta" id="priceMeta"></ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="quiz rv" id="quiz">
+      <div class="quiz-head">
+        <div>
+          <h3 data-i18n="quiz.h3">Не готовы бронировать?</h3>
+          <p class="quiz-sub" data-i18n="quiz.sub">Пять вопросов — скажу, куда посмотрел бы первым.</p>
+        </div>
+        <button type="button" class="btn btn-gold" id="quizStart" data-i18n="quiz.start">Пройти за 30 секунд</button>
+      </div>
+      <div class="quiz-body" id="quizBody" hidden>
+        <div class="quiz-prog" id="quizProg"></div>
+        <div class="quiz-q" id="quizQ"></div>
+        <div class="quiz-opts" id="quizOpts" role="radiogroup"></div>
+        <div class="quiz-nav"><button type="button" class="btn btn-ghost" id="quizBack" data-i18n="quiz.back">← Назад</button></div>
+      </div>
+      <div class="quiz-res" id="quizRes" hidden>
+        <div class="quiz-zone" id="quizZone"></div>
+        <p id="quizText"></p>
+        <p class="note" data-i18n="quiz.end">Это 15 минут из нашего часа. Остальные 45 — на то, чего по квизу не видно.</p>
+        <div class="cta-row">
+          <a class="btn btn-gold" id="quizCta" href="https://t.me/AlekseiMerzliakov" target="_blank" rel="noopener" data-cta="quiz"><span data-i18n="quiz.cta">Разобрать за $60</span> →</a>
+          <button type="button" class="btn btn-ghost" id="quizRetry" data-i18n="quiz.retry">Пройти заново</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Skills ===== -->
+<section class="section" id="skills" data-lvl="skills">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow"><span class="q"></span><span data-i18n="skills.eyebrow">Навыки</span></div>
+      <h2 class="h2" data-i18n="skills.h2">Что я умею — и чем докажу</h2>
+      <p class="lead" data-i18n="skills.lead">Каждый навык ниже подкреплён фактом из моей карьеры, а не словом из вакансии. Любой из них можно разобрать за тот же час.</p>
+    </div>
+    <div class="skills" id="skillsGrid"></div>
+    <button type="button" class="btn more-skills" id="moreSkills" aria-expanded="false" data-i18n="skills.more">Ещё четыре навыка ↓</button>
+    <p class="note center" data-i18n="skills.foot">Если вашей проблемы здесь нет — напишите. Скажу честно, помогу или нет.</p>
+  </div>
+</section>
+
+<!-- ===== Projects ===== -->
+<section class="section" id="projects" data-lvl="projects">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow"><span class="q"></span><span data-i18n="projects.eyebrow">Проекты</span></div>
+      <h2 class="h2" data-i18n="projects.h2">Игры, которые я делал</h2>
+      <p class="lead" data-i18n="projects.lead">Четырнадцать лет жанров — от match-3 на OK.ru до зомби-шутера с глобальным запуском. Логотипов нет намеренно: права на них у студий. Есть роль, годы и результат.</p>
+    </div>
+    <div class="filters rv" id="filters" role="group" aria-label="Filter"></div>
+    <div class="projects" id="projectsGrid"></div>
+    <p class="note" data-i18n="projects.foot">Ссылки ведут на сторы и официальные страницы. Соцпроекты 2012–2016 сняты с публикации — для игр десятилетней давности это нормально.</p>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq" data-lvl="faq">
+  <aside class="xray-note" data-xray="faq"></aside>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow"><span class="q"></span><span data-i18n="faq.eyebrow">Вопросы</span></div>
+      <h2 class="h2" data-i18n="faq.h2">Вопросы, которые вы бы задали</h2>
+    </div>
+    <div class="faq-grid">
+      <div>
+        <div class="faq rv" id="faqList"></div>
+        <p class="note" data-i18n="faq.foot">Не нашли свой вопрос — задайте в Telegram. Отвечаю сам, не ассистент.</p>
+      </div>
+      <div class="photo-tile faq-photo rv rv-d1">
+        <img src="img/shrug-1600.jpg" srcset="img/shrug-800.jpg 800w, img/shrug-1600.jpg 1600w" sizes="(max-width: 900px) 90vw, 50vw" alt="" width="1600" height="1067" loading="lazy" decoding="async">
+        <div class="cap" data-i18n-html="faq.cap"><b>«У нас и так есть аналитика».</b> Аналитика говорит, где. Я — почему и что менять первым.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section class="section" id="about" data-lvl="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="photo-tile about-photo rv">
+        <img src="img/about-stand-1600.jpg" srcset="img/about-stand-800.jpg 800w, img/about-stand-1600.jpg 1600w" sizes="(max-width: 900px) 90vw, 36vw" alt="Алексей Мерзляков" data-i18n-alt="about.alt" width="1067" height="1600" loading="lazy" decoding="async">
+      </div>
+      <div class="rv rv-d1">
+        <div class="eyebrow"><span class="q"></span><span data-i18n="about.eyebrow">Кто я</span></div>
+        <h2 class="h2" data-i18n="about.h2">Начинал с того, что ломал игры. Теперь чиню</h2>
+        <div class="about-txt" id="aboutTxt"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Resume ===== -->
+<section class="section" id="cv" data-lvl="cv">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow"><span class="q"></span><span data-i18n="cv.eyebrow">Резюме</span></div>
+      <h2 class="h2" data-i18n="cv.h2">Опыт по годам</h2>
+      <p class="lead" data-i18n="cv.lead">Всё то же, что в резюме. Только в хронологии и с цифрами на виду.</p>
+    </div>
+    <div class="cv-head rv">
+      <img class="cv-ava" src="img/calm-800.jpg" alt="" width="533" height="800" loading="lazy" decoding="async">
+      <div>
+        <div class="cv-name">Алексей Мерзляков <span class="cv-name-en">· Aleksei Merzliakov</span></div>
+        <div class="cv-line" data-i18n="cv.line">Senior Game Producer / Senior Product Manager · Москва, готов к релокации · рассматриваю позиции в штат и проектную работу</div>
+        <div class="cv-contacts"><a href="https://t.me/AlekseiMerzliakov" target="_blank" rel="noopener">@AlekseiMerzliakov</a> · <a href="mailto:kurusayd@gmail.com">kurusayd@gmail.com</a> · <a href="tel:+79673215453">+7 967 321-54-53</a> · <a href="https://www.linkedin.com/in/alekseymerzlyakov" target="_blank" rel="noopener">LinkedIn</a></div>
+        <p class="cv-sum" data-i18n="cv.summary"></p>
+      </div>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Resume">
+      <button type="button" class="on" id="tabbtn-exp" data-tab="exp" role="tab" aria-selected="true" aria-controls="tab-exp" data-i18n="cv.tabExp">Опыт</button>
+      <button type="button" id="tabbtn-edu" data-tab="edu" role="tab" aria-selected="false" aria-controls="tab-edu" tabindex="-1" data-i18n="cv.tabEdu">Образование и навыки</button>
+    </div>
+    <div class="cv-grid">
+      <div>
+        <div class="tabpane on" id="tab-exp" role="tabpanel" aria-labelledby="tabbtn-exp"><div class="timeline" id="timeline"></div></div>
+        <div class="tabpane" id="tab-edu" role="tabpanel" aria-labelledby="tabbtn-edu"><div id="edu"></div></div>
+      </div>
+      <aside class="rv rv-d1">
+        <div class="side-card">
+          <h3 class="sc-h" data-i18n="cv.dlTitle">Скачать и распечатать</h3>
+          <div class="dl">
+            <button class="btn" type="button" id="printBtn"><span aria-hidden="true">🖨</span> <span data-i18n="cv.print">Версия для печати</span></button>
+            <a class="btn" href="cv/Aleksei_Merzliakov_CV_EN.pdf" download><span aria-hidden="true">📄</span> <span data-i18n="cv.dlEn">CV — English (PDF)</span></a>
+            <a class="btn" href="cv/Aleksei_Merzliakov_CV_RU.pdf" download><span aria-hidden="true">📄</span> <span data-i18n="cv.dlRu">Резюме — русский (PDF)</span></a>
+          </div>
+          <label class="switch"><input type="checkbox" id="plainToggle"><span data-i18n="cv.plain">Режим резюме: без игрового слоя</span></label>
+        </div>
+        <div class="side-card">
+          <h3 class="sc-h" data-i18n="cv.factsTitle">Коротко</h3>
+          <ul id="cvFacts"></ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="section contact" id="contact" data-lvl="contact">
+  <aside class="xray-note" data-xray="contact"></aside>
+  <div class="wrap">
+    <div class="contact-card rv">
+      <div class="txt">
+        <h2 data-i18n="contact.h2">Ваша воронка уже где-то течёт. Найдём где</h2>
+        <p class="lead" data-i18n="contact.lead">Одно сообщение: название, ссылка, что болит. Остальное — моя работа.</p>
+        <div class="cta-row">
+          <a class="btn btn-gold btn-lg" href="https://t.me/AlekseiMerzliakov" target="_blank" rel="noopener" data-cta="contact" data-tg><span data-i18n="contact.cta">Написать в Telegram</span> <span class="price" data-i18n="contact.price">$60 / 60 мин</span></a>
+          <a class="btn btn-lg" href="mailto:kurusayd@gmail.com" data-cta="mail2" data-mail data-i18n="contact.mail">Написать письмо</a>
+        </div>
+        <p class="micro" data-i18n="contact.micro">Час — $60. Список правок — в течение суток после созвона. Не уверены, подходит ли ваша игра? Спросите в чате — отвечу честно.</p>
+        <p class="contacts-h" data-i18n="contact.title">Контакты</p>
+        <div class="links-row">
+          <a href="mailto:kurusayd@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>kurusayd@gmail.com</a>
+          <a href="https://t.me/AlekseiMerzliakov" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M9.04 15.47 8.66 20.8c.54 0 .78-.23 1.06-.51l2.55-2.44 5.28 3.87c.97.53 1.65.25 1.91-.9L22.9 3.97c.3-1.43-.52-1.99-1.46-1.64L2.2 9.72c-1.4.55-1.38 1.33-.24 1.68l4.92 1.54L18.3 5.76c.54-.33 1.03-.15.63.18"/></svg>@AlekseiMerzliakov</a>
+          <a href="tel:+79673215453"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>+7 967 321-54-53</a>
+          <a href="https://www.linkedin.com/in/alekseymerzlyakov" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zm7 0h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.5c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>LinkedIn</a>
+        </div>
+      </div>
+      <div class="ph"><img src="img/welcome-1600.jpg" srcset="img/welcome-800.jpg 800w, img/welcome-1600.jpg 1600w" sizes="(max-width: 900px) 100vw, 50vw" alt="" width="1600" height="1067" loading="lazy" decoding="async"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot-wrap">
+  <div class="wrap">
+    <div class="foot">
+      <span>© <span id="year"></span> Aleksei Merzliakov · Senior Game Producer · <span data-i18n="foot.loc">Москва / remote · RU | EN</span></span>
+      <span class="foot-right">
+        <label class="switch"><input type="checkbox" id="xrayToggle"><span data-i18n="xray.label">Рентген воронки</span></label>
+        <span class="k"><span data-i18n="foot.ach">Ачивки:</span> <b id="achCount">0</b>/<span id="achTotal">13</span> · <kbd>↑↑↓↓←→←→BA</kbd></span>
+      </span>
+    </div>
+    <p class="foot-tip" id="footTip"></p>
+  </div>
+</footer>
+
+<!-- Mobile sticky CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <span class="sc-txt"><b data-i18n="sticky.t1">Час — $60</b><span data-i18n="sticky.t2">Список правок в течение суток</span></span>
+  <a class="btn btn-gold" href="https://t.me/AlekseiMerzliakov" target="_blank" rel="noopener" data-cta="sticky" data-tg data-i18n="sticky.btn">Telegram</a>
+</div>
+
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+<!-- Easter egg -->
+<div class="egg" id="egg" hidden role="dialog" aria-modal="true" aria-labelledby="eggTitle">
+  <div class="egg-card">
+    <button type="button" class="egg-x" id="eggClose" aria-label="Close">×</button>
+    <img src="img/welcome-800.jpg" alt="" width="800" height="533">
+    <div class="egg-body">
+      <div class="t1" data-i18n="egg.t1">Секрет найден</div>
+      <h3 id="eggTitle" data-i18n="egg.h3">Нашли секрет. В играх клиентов я проверяю и такое</h3>
+      <p data-i18n="egg.p">Пасхалки, которых никто не найдёт, тоже съедают время команды. Скажу, какие из них окупаются, а какие — нет.</p>
+      <a class="btn btn-gold" href="https://t.me/AlekseiMerzliakov" target="_blank" rel="noopener" data-cta="egg" data-tg data-i18n="egg.cta">Расскажу, что ещё проверяю →</a>
+    </div>
+  </div>
+</div>
+
+<script src="main.js" defer></script>
+</body>
+</html>
