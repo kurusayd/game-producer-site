@@ -207,6 +207,10 @@
             <button class="btn btn-ghost" id="replay" type="button" data-i18n="game.replay">Сыграть ещё раз</button>
           </div>
         </div>
+        <div class="photo-tile game-photo">
+          <img src="img/shrug-800.jpg" srcset="img/shrug-800.jpg 800w, img/shrug-1600.jpg 1600w" sizes="(max-width: 900px) 90vw, 40vw" alt="" width="800" height="533" loading="lazy" decoding="async">
+          <div class="cap" data-i18n-html="game.photoCap"><b>Так выглядит новичок</b> на седьмом экране туториала. Найдите, что его довело.</div>
+        </div>
       </div>
     </div>
   </div>
@@ -231,6 +235,9 @@
           <h3 data-i18n="method.outTitle">Что вы получите</h3>
           <p data-i18n="method.out">Список из 5–10 правок с приоритетами: что сделать до следующего билда, что — в следующем спринте, что не трогать вообще. Не «подумайте над онбордингом», а «на третьем экране туториала игрок не понимает, что нажимать — уберите текст, подсветите кнопку, дайте выстрелить на второй секунде».</p>
         </div>
+        <h3 class="sub-h sample-h" data-i18n="offer.sampleTitle">Пример списка правок</h3>
+        <p class="note" style="margin-top:-6px;margin-bottom:12px" data-i18n="offer.sampleNote">Условный пример формата, не реальный проект.</p>
+        <ul class="sample" id="sampleList"></ul>
       </div>
     </div>
 
@@ -303,9 +310,6 @@
         </div>
         <h3 class="sub-h rv" data-i18n="offer.sendTitle">Что прислать перед созвоном</h3>
         <ul class="send rv" id="sendList"></ul>
-        <h3 class="sub-h rv" data-i18n="offer.sampleTitle">Пример списка правок</h3>
-        <p class="note rv" style="margin-top:-6px;margin-bottom:12px" data-i18n="offer.sampleNote">Условный пример формата, не реальный проект.</p>
-        <ul class="sample rv" id="sampleList"></ul>
         <h3 class="sub-h rv" data-i18n="offer.howTitle">Три шага до списка правок</h3>
         <ol class="howto rv" id="howto"></ol>
       </div>
@@ -496,7 +500,7 @@
 <footer class="foot-wrap">
   <div class="wrap">
     <div class="foot">
-      <span>© <span id="year"></span> Aleksei Merzliakov · Senior Game Producer · <span data-i18n="foot.loc">Москва / remote · RU | EN</span></span>
+      <span>© <span id="year"></span> <span data-i18n="foot.name">Алексей Мерзляков</span> · Senior Game Producer · <span data-i18n="foot.loc">Москва / remote · RU | EN</span></span>
       <span class="foot-right">
         <span class="k"><span data-i18n="foot.ach">Открыто ачивок:</span> <b id="achCount">0</b> / <span id="achTotal">13</span> · <span data-i18n="foot.egg">пасхалка на клавиатуре:</span> <kbd>↑↑↓↓←→←→BA</kbd></span>
       </span>
